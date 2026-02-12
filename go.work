@@ -1,0 +1,20 @@
+go 1.25.5
+
+use (
+	./src/collections
+	./src/constructs
+	./src/fizzbuzz
+	./src/fizzbuzz_test
+	./src/functions
+	./src/hello-world
+	./src/interfaces
+	./src/ping
+	./src/pointers
+	./src/roman-numerals
+	./src/roman-numerals_test
+	./src/struct
+	./src/sum
+	./src/url-shortner
+	./src/url-shortner-pg
+	./src/variables
+)
