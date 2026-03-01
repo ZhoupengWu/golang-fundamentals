@@ -12,6 +12,7 @@ use (
 	./src/pointers
 	./src/roman-numerals
 	./src/roman-numerals_test
+	./src/started
 	./src/struct
 	./src/sum
 	./src/url-shortner
