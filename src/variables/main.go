@@ -19,4 +19,25 @@ func main () {
 	is_adult := friend_age > major_age
 
 	fmt.Printf("La mia amica è maggiorenne? %t\n", is_adult)
+
+	/*
+		In go, we have various types
+
+		- Integer: int, int8, int16, int32, int64
+		- Integer unsigned: uint, uint8, uint16, uint32, uint64
+		- Float: float32, float64
+		- Boolean: bool
+		- String: string
+		- Special types: - complex64, complex128 (for complex numbers)
+						 - byte (alias for uint8)
+						 - rune (alias for int32, used to represent a Unicode character)
+						 - uintptr (used to store a generic pointer)
+	*/
+
+	/*
+		To convert from a type to another type, we use Type(name_variable)
+
+		- Ex1: a := int(4.54)
+		- Ex2: a := 45; b := float64(a)
+	*/
 }
