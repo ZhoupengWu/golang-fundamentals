@@ -40,4 +40,33 @@ func main () {
 		- Ex1: a := int(4.54)
 		- Ex2: a := 45; b := float64(a)
 	*/
+
+	/*
+		Const: a variable that can't modify. It's defined at compile-time
+	*/
+	const PI = 3.1429
+
+	/*
+		Iota: a counter that start from 0 and increment by 1 for each const of the block. Only used in a const block
+		You can create expressions with iota
+	*/
+	const (
+		MONDAY = iota + 1
+		TUESDAY
+		WEDNESDAY
+		THURSDAY
+		FRIDAY
+		SATURDAY
+		SUNDAY
+	)
+
+	const (
+		Bi = 8 << (iota * 10)
+		KBi
+		MBi
+		GBi
+		TBi
+	)
+
+	fmt.Printf("1 terabit sono %d\n", TBi)
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main () {
@@ -35,6 +36,21 @@ func main () {
 	fmt.Printf("Array: %v\n", my_iphones)
 	fmt.Printf("Array: %v\n", name_girl)
 	fmt.Printf("Array: %v\n", prezzi)
+
+	// We can access a subset of an array ([start:end] --- start inclusive and end exclusive)
+	girl_friends := name_girl[1:3]
+
+	// We can check with = if two arrays have the same length and the same elements in the same order
+	fmt.Println(name_girl == [4]string(girl_friends))
+
+	// Array has a various functions
+	// sort, using the standard library of go
+	// copy: it takes two arguments (dest array, source array) and returns the number of elements copied
+	// Others functions useful: sort.Search, sort.Reverse
+
+	sort.Ints(my_iphones[:])
+	copied := copy(prezzi[:], balls[:])
+	_ = copied
 
 	/*
 		Collections: slice (array dinamici)
