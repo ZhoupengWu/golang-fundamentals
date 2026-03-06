@@ -39,6 +39,7 @@ func main () {
 
 	// We can access a subset of an array ([start:end] --- start inclusive and end exclusive)
 	girl_friends := name_girl[1:3]
+	girl_friends = append(girl_friends, "aa", "bb")
 
 	// We can check with = if two arrays have the same length and the same elements in the same order
 	fmt.Println(name_girl == [4]string(girl_friends))
@@ -51,6 +52,8 @@ func main () {
 	sort.Ints(my_iphones[:])
 	copied := copy(prezzi[:], balls[:])
 	_ = copied
+
+	// You can declare array of a type for example [length]type
 
 	/*
 		Collections: slice (array dinamici)
@@ -93,4 +96,11 @@ func main () {
 	for name, class := range students {
 		fmt.Printf("%s sta nella classe %s\n", name, class)
 	}
+
+	/*
+		String can be considered as a slice of byte or rune
+
+		There are 2 types of string: - String literals (using "")
+									 - Raw string literals (using ``) --> for multiline strins
+	*/
 }
